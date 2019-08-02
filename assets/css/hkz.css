@@ -1,0 +1,260 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+::selection {
+  background: #2D2F36;
+}
+::-webkit-selection {
+  background: #2D2F36;
+}
+::-moz-selection {
+  background: #2D2F36;
+}
+
+/*Welcome Page*/
+#WelcomeBody{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Inter UI', sans-serif;
+  color: #3F3C3C;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+[id="logo"] {
+  position: relative;
+  flex: 0 0 3.75rem;
+  width: 3.75rem;
+  z-index: 2;
+}
+[id="logo"] polygon {
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+}
+[id="logo"] circle {
+  -webkit-transform-origin: 80% 80%;
+          transform-origin: 80% 80%;
+}
+
+.site-title {
+  position: relative;
+  overflow: hidden;
+  margin-left: -1.5rem;
+  z-index: 1;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.site-title-text {
+  padding: 0.25rem 0.375rem 1.25rem 10.75rem;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-left: 0.015625rem;
+  color: #FF6F00;
+}
+.site-title-text1 {
+  padding: 0.25rem 0.375rem 1.25rem 10.75rem;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-left: 0.015625rem;
+  color: #FF6F00;
+}
+.button-restart {
+  margin-bottom: -223px;
+  margin-left:140px;
+  position: absolute;
+  bottom: 1.5rem;
+  padding: 0.375rem 1.5rem 0.5rem 1.5rem;
+  font-family: "Dosis", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.03125rem;
+  outline: none;
+  cursor: pointer;
+  color: #3F3C3C;
+  background-color: transparent;
+  border: 0.125rem solid #3F3C3C;
+  border-radius: 0.125rem;
+  transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: color 0.2s ease-out, transform 0.2s ease-out;
+  transition: color 0.2s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+.button-restart:after {
+  position: absolute;
+  top: -0.125rem;
+  left: -0.125rem;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  border: 0.125rem solid #FF6F00;
+  -webkit-transform: translate(0.25rem, 0.25rem);
+          transform: translate(0.25rem, 0.25rem);
+  opacity: 0;
+  transition: opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+.button-restart:hover {
+  color: #FF6F00;
+  border-color:#FF6F00;
+  -webkit-transform: translateY(-0.125rem);
+          transform: translateY(-0.125rem);
+}
+.button-restart:hover:after {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.button-restart:active {
+  -webkit-transform: translateY(-0.0625rem);
+          transform: translateY(-0.0625rem);
+  transition-duration: 0s;
+}
+/*Login Resgister*/
+body {
+  background: #ffffff;
+  font-family: 'Inter UI', sans-serif;
+}
+.section {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: calc(100%);
+  position: absolute;
+  place-content: center;
+  width: calc(100%);
+}
+@media (max-width: 767px) {
+  .section {
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+.container {
+  display: flex;
+  height: 320px;
+  margin: 0 auto;
+  width: 640px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+
+}
+
+.label,.login
+    {
+      color: #000;
+    }
+.login {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 50px 40px 40px;
+}
+.eula {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 40px;
+}
+.logRight {
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 100%) {
+  .logRight {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+  }
+}
+.anim {
+  position: absolute;
+  width: 320px;
+}
+.RegAnim
+{
+ position: absolute;
+  width: 730px;
+}
+path {
+  fill: none;
+  stroke: url(#linearGradient);
+  stroke-width: 4;
+}
+.loginPath
+{
+  stroke-dasharray: 241 1794;
+}
+.regPath
+{
+   stroke-dasharray: 539 3830;
+  
+}
+.form {
+  margin: 40px;
+  position: absolute;
+}
+label {
+  color:  #000000;
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.inputs{
+  background: transparent;
+  border: 0;
+  color: #000;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+}
+.inputs::-moz-focus-inner { 
+  border: 0; 
+}
+#submit,#register
+{
+  color: #757575;
+  margin-top: 40px;
+  transition: color 300ms;
+}
+#submit:focus ,#register:focus{
+  color: #000000;
+}
+#submit:active, #register:active{
+  color: #000000;
+}
+.reg
+{
+  margin-top: 40px;
+  font-size: 20px;
+}
+.customBtn
+{
+  color: #fff;
+  background-color: #000;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 1.4em;
+  font-family: 'Inter UI';
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+}
